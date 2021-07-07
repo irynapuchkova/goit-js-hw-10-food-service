@@ -1,8 +1,8 @@
 import './sass/main.scss';
 
 import menuItems from './menu.json';
-import menuItemsTpl from './templates/menuItemTpl.hbs'
-import { on } from 'events';
+import menuItemsTpl from './templates/menuItemTpl.hbs';
+// import { on } from 'events';
 
 const menuItemsList = document.querySelector('.js-menu');
 const Theme = {
@@ -10,6 +10,8 @@ const Theme = {
   DARK: 'dark-theme',
 };
 const themeControlCheckbox = document.querySelector('input[type="checkbox"]');
+
+console.log(themeControlCheckbox);
 const body = document.querySelector('body');
 
 menuItemsList.innerHTML = menuItemsTpl(menuItems);
